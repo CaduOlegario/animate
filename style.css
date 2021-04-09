@@ -1,0 +1,106 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+  margin: 50px;
+  animation-name: changeColor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  background-color: rgb(233, 20, 20);
+  border: 2px dashed #fff;
+}
+
+/* Animations 
+
+@keyframes changeColor {
+  20% {
+    background-color: rgb(233, 20, 20);
+    width: 250px;
+  }
+
+  40% {
+    background-color: rgb(201, 31, 187);
+    height: 250px;
+    transform: skew(25Deg);
+  }
+  
+  70% {
+    transform: skew(-25Deg);
+    transform: scale(2.5);
+  }
+
+  90% {
+    background-color: rgb(201, 31, 110);
+    border-radius: 50%;
+
+  }
+} */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  animation-name: changeColor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  margin: 15px;
+}
+.box:hover {
+  position: relative;
+  left: 250px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+/* Animations */
+
+@keyframes changeColor {
+  20% {
+    border-top: 5px solid #fff;
+    color: rgb(255, 255, 5);
+    font-size: 2.3rem;
+    
+  }
+
+  40% {
+    border-left: 5px dashed #fff;
+    color: rgb(255, 13, 5);
+    font-size: 1.9rem;
+    transform: scale(2)
+  }
+
+  60% {
+    border-bottom: 5px dashed #fff;
+    color: rgb(80, 5, 255);
+    font-size: 1.5rem;
+    border-radius: 50%;
+  }
+
+  80% {
+    border-right: 5px dashed #fff;
+    background: rgb(201, 31, 187);
+    color: rgb(5, 238, 255);
+    font-size: 2.5rem;
+  }
+}
